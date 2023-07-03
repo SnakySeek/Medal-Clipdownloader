@@ -1,0 +1,22 @@
+{
+  "name": "medal-clip-downloader",
+  "version": "1.0.0",
+  "description": "Downloads Medal.tv Clips From Url",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SnakySeek/Medal-Clipdownloader.git"
+  },
+  "keywords": [
+    "medal.tv"
+  ],
+  "author": "SnakySeek",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SnakySeek/Medal-Clipdownloader/issues"
+  },
+  "homepage": "https://github.com/SnakySeek/Medal-Clipdownloader#readme"
+}
