@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/SnakySeek/Medal-Clipdownloader/issues"
   },
-  "homepage": "https://github.com/SnakySeek/Medal-Clipdownloader#readme"
+  "homepage": "https://github.com/SnakySeek/Medal-Clipdownloader#readme",
+  "dependencies": {
+    "axios": "^1.4.0"
+  }
 }
