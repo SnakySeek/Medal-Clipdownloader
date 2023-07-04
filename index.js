@@ -1,23 +1,26 @@
 const Axios = require("axios");
 const fs = require('fs');
-const parser = require('htmlparser2')
 
-async function downloadFile(url) {
+
+
+
+async function getData(url) {
     const { data, headers } = await Axios({
-        url: url,
+        url: String(url),
         method: 'GET',
         responseType: 'stream',
     });
-    const stream = fs.createWriteStream('Clip.mp4');
-    data.pipe(stream);
+    return data;
 }
 
 async function download(downloadUrl) {
+    const data = getData(downloadUrl)
     if (String(downloadUrl).includes('cdn.medal.tv/ugcc/content-social')) {
-        downloadFile(downloadUrl)
+        const stream = fs.createWriteStream('Clip.mp4');
+        data.pipe(stream);
     } else {
-
+        
     }
 
 }
-download('')
+download('https://medal.tv/games/roblox/clips/1hxoTxj8oGAtWD/jgrKC05WD8iT')
