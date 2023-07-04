@@ -29,4 +29,4 @@ async function download(downloadUrl) {
     } else {downloadFile(downloadUrl, true)}
 
 }
-download('https://medal.tv/games/roblox/clips/1hxoTxj8oGAtWD/jgrKC05WD8iT')
+module.exports = {download}
